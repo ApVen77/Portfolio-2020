@@ -58,9 +58,13 @@ body  {
     flex-grow: 2;
 }
 
+.two p {
+    font-size: 30px;
+}
+
 p {
-    font-size: 15px;
-    color: #eeeeee;
+    font-size: 18px;
+    color: aliceblue;
 }
 
 .second {
@@ -68,6 +72,10 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.card {
+    margin-bottom: 15px;
 }
 
  .card-body {
@@ -78,6 +86,8 @@ p {
 p.card-text {
     color: darkslateblue; 
 }
+
+
 
 
 .three .card-body p {
@@ -159,10 +169,11 @@ img:hover {
      }
 
      footer p {
-         font-size: 20px;
+         font-size: 23px;
      }
 
      footer p::selection {
         font-size: 30px;
+        color: rgb(54, 54, 1);
         background-color: yellow;
     }
