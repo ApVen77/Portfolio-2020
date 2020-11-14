@@ -1,0 +1,168 @@
+* {
+    font-family: 'Source Code Pro', monospace;
+    cursor: pointer;
+}
+
+
+.jumbotron {
+    background-color: transparent; 
+    height: 20%;
+    margin-top: 10px;
+  }
+
+  .jumbotron p {
+      word-spacing: 40px;
+      font-size: 25px;
+      text-align: center;
+      transition-duration: 2s;
+      transition-property:  color, font-size; 
+  }
+
+  .jumbotron p:hover {
+      color:blue;
+      font-size: 30px;
+      /* transform: skew(1,2); */
+  
+  }
+
+h1 {
+    text-align: center;
+    color: #FBDCF7;
+    font-size: 100px;
+    margin-right: 10px;
+}
+
+body  {
+     
+    
+        background-image: url("images/nesa-by-makers-kwzWjTnDPLk-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+         background-attachment: fixed;
+  }
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flexbox-item {
+    width: 450px;
+    height: 500px;
+   
+}
+
+.two {
+
+    flex-grow: 2;
+}
+
+p {
+    font-size: 15px;
+    color: #eeeeee;
+}
+
+.second {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ .card-body {
+   
+    color: red;
+}
+
+p.card-text {
+    color: darkslateblue; 
+}
+
+
+.three .card-body p {
+    color: black;
+}
+.four {
+   
+    flex-grow: 3;
+}
+
+.four h2 {
+    text-align: center;
+    color:  #FBDCF7;
+    font-size: 40px;
+}
+form {
+        max-width: 580px;
+        margin: 70px auto;
+        padding: 16px;
+        border: 1px solid #eaeaea;
+        
+      }
+
+label {
+          color: white;
+      }
+
+h5 {
+          color: red;
+      }
+
+
+
+img {
+    width: 350px;
+    height: 300px;
+    border: solid black 10px;
+    border-radius: 50%;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    transition-property: transform filter;
+}
+
+img:hover {
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    filter: blur(4px);
+}
+
+.fifth .card  {
+    /* background-image: linear-gradient(#D8BA01, #F7523F ); */
+    background-color: transparent;
+    height: 610px;
+    width: 380px;
+    border-radius: 25px 25px;
+    border: none;
+    font-size: 17px;
+    color: beige;
+    margin-top: 55px;
+    margin-bottom: 10px;
+    opacity: 0.6;
+
+
+  }
+
+  .fifth h2 {
+      text-align: center;
+      color: white;
+  }
+
+  footer { 
+      background-color: transparent;
+      color: #CEE0F7;
+      text-align: center;
+      position: sticky;
+      margin-top: 300px;
+      height: 10%;
+      font-size: 25px;
+     }
+
+     footer p {
+         font-size: 20px;
+     }
+
+     footer p::selection {
+        font-size: 30px;
+        background-color: yellow;
+    }
