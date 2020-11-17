@@ -178,3 +178,15 @@ img:hover {
         color: rgb(54, 54, 1);
         background-color: yellow;
     }
+
+    @media screen and (max-width: 500px) {
+          body {
+            
+            background-image: none;
+        }
+
+        .card-body img {
+            width: 25%;
+
+        }
+    }
