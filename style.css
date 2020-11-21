@@ -3,6 +3,13 @@
     cursor: pointer;
 }
 
+#dateNow {
+    color: rgb(255, 250, 250);
+    font-size: 28px;
+    background-color: transparent;
+    text-align: center;
+}
+
 
 .jumbotron {
     background-color: transparent; 
@@ -180,13 +187,15 @@ img:hover {
     }
 
     @media screen and (max-width: 500px) {
-          body {
-            
-            background-image: none;
-        }
+        
 
         .card-body img {
-            width: 25%;
+           display: none; 
 
+        }
+
+        .fifth {
+            margin: 0 10px; 
+            visibility: inherit;
         }
     }
