@@ -25,14 +25,20 @@
 <body>
     <div class="jumbotron">
         <h1>&#9963 April Long </h1>
+        <h2>Current Time</h2>
         <div id="dateNow"></div>
-        <p><i>Educator, Developer, & Motivator</i></p>
+        <h2>Today's Date</h2>
+        <div id="dow"></div>
+        <div id="datNow"></div>
+        <p>Educator, Developer, & Motivator</p>
     </div>
     <br>
     <br>
     <div class="flexbox-container">
 
         <div class="flexbox-item" two>
+            <div class="fish"> </div>
+            <div class="fish2"> </div>
             <h2><strong>About Me</strong></h2>
 
             <p> My name is <strong>April Long</strong>. I have been an active teacher and teacher
@@ -95,6 +101,7 @@
         </div> -->
         <div class="flexbox-item four">
             <h2><strong>Contact Me</strong></h2>
+            <div class="test"></div>
             <form id="form" action="https://apven77.github.io/Portfolio-2020/" method="get">
                 <label for="name"><strong>Name</strong></label>
                 <br>
@@ -102,9 +109,9 @@
                 <br>
 
                 <br>
-                <label for="e-mail">E-mail</label>
+                <label for="e-mail" id="email">E-mail</label>
                 <br>
-                <input type="email" id="e-mail">
+                <input type="email" id="e-mail" required>
                 <br>
                 <br>
                 <br>
@@ -115,11 +122,11 @@
 
                 <input type="radio" id="evening" name="eveningtime" value="evening">
                 <label for="evening">Evening</label><br>
-                <input type="submit" id="submit">
+                <input type="submit" class="submit">
+
+                <div id="dialog" title="Basic dialog">
             </form>
         </div>
-
-
 
 
 
