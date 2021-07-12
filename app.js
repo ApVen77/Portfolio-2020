@@ -11,7 +11,7 @@ function display_c(){
     
     function display_ct() {
         var x = new Date()
-        var x1=x.toUTCString();// changing the display to UTC string
+        var x1=x.toLocaleString();// changing the display to UTC string
         document.getElementById('ct').innerHTML = x1;
         var tt;
         tt=display_c();
