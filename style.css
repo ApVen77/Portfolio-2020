@@ -121,7 +121,7 @@ p.card-text {
     color:  #FBDCF7;
     font-size: 40px;
 }
-form {
+#form {
         max-width: 580px;
         margin: 70px auto;
         padding: 16px;
@@ -189,9 +189,9 @@ img:hover {
   footer { 
       background-color: transparent;
       color: #CEE0F7;
-      text-align: center;
+      text-align: left;
       position: sticky;
-      margin-top: 300px;
+      margin-top: 350px;
       height: 10%;
       font-size: 25px;
      }
