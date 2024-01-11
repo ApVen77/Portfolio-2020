@@ -188,8 +188,7 @@ footer {
   background-color: transparent;
   color: #cee0f7;
   text-align: left;
-  position: sticky;
-  margin-top: 350px;
+  position: absolute;
   height: 10%;
   font-size: 25px;
 }
@@ -214,6 +213,10 @@ footer p::selection {
   padding: 10px;
   color: rgb(20, 168, 20);
   border: 1px dotted rgd(20, 168, 20);
+}
+
+#ss-review {
+  margin-left: 100px;
 }
 
 @media screen and (max-width: 500px) {
