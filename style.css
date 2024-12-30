@@ -13,10 +13,6 @@ h2,
   text-align: center;
 }
 
-.about-me {
-  background-color: ;
-
-}
 
 .fifth {
   background-color: #eb1b1b;
@@ -233,7 +229,7 @@ footer p::selection {
   height: 350px;
 }
 
-.reviews-page h2 {
+#ss-review h2 {
   margin-top: 150px;
 }
 
