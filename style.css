@@ -117,8 +117,10 @@ p.card-text {
 }
 
 .four {
-  flex-grow: 3;
+  margin-left: 150px;
 }
+
+
 
 .four h2 {
   text-align: center;
