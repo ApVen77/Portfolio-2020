@@ -172,7 +172,8 @@ img:hover {
 }
 
 .card:hover {
-  border: inset black 13px;
+  border: inset black 4px;
+  opacity: 0.4;
 
 }
 
@@ -228,6 +229,16 @@ footer p::selection {
 
 #ss-review {
   margin-left: 100px;
+  background-color: black;
+  height: 350px;
+}
+
+.reviews-page h2 {
+  margin-top: 150px;
+}
+
+.reviews-page {
+  width: 500px;
 }
 
 @media screen and (max-width: 500px) {
