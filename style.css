@@ -13,6 +13,11 @@ h2,
   text-align: center;
 }
 
+.about-me {
+  background-color: ;
+
+}
+
 .fifth {
   background-color: #eb1b1b;
 }
@@ -100,6 +105,7 @@ p {
 
 .card {
   margin-bottom: 15px;
+
 }
 
 .card-body {
@@ -124,7 +130,7 @@ p.card-text {
   font-size: 40px;
 }
 
-#form {
+#feedbackForm {
   max-width: 580px;
   margin: 70px auto;
   padding: 16px;
@@ -163,6 +169,11 @@ img:hover {
   transform: rotateX(180deg);
   transform: rotateY(180deg);
   filter: blur(4px);
+}
+
+.card:hover {
+  border: inset black 13px;
+
 }
 
 .fifth .card {
