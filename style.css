@@ -93,10 +93,8 @@ p {
 }
 
 .second {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
+
+  margin-left: 600px;
 }
 
 .card {
@@ -155,12 +153,14 @@ h5 {
 
 img {
   width: 350px;
-  height: 300px;
-  border: solid black 10px;
-  border-radius: 50%;
+
+  border: solid black 5px;
+  border-radius: 60%;
   transition-duration: 2s;
   transition-delay: 2s;
   transition-property: transform filter;
+  max-width: 100%;
+  height: auto;
 }
 
 img:hover {
