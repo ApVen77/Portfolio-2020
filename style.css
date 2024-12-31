@@ -94,7 +94,7 @@ p {
 
 .second {
 
-  margin-left: 600px;
+  margin-left: 550px;
 }
 
 .card {
@@ -153,14 +153,13 @@ h5 {
 
 img {
   width: 350px;
-
+  height: 300px;
   border: solid black 5px;
   border-radius: 60%;
   transition-duration: 2s;
   transition-delay: 2s;
   transition-property: transform filter;
-  max-width: 100%;
-  height: auto;
+
 }
 
 img:hover {
@@ -168,6 +167,7 @@ img:hover {
   transform: rotateY(180deg);
   filter: blur(4px);
 }
+
 
 .card:hover {
   border: inset black 4px;
@@ -232,7 +232,7 @@ footer p::selection {
 }
 
 #ss-review h2 {
-  margin-top: 150px;
+  padding: 90px;
 }
 
 .reviews-page {
