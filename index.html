@@ -4,17 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -23,42 +15,42 @@
 </head>
 
 <body onload=display_ct();>
-    <div class="jumbotron">
-        <h1>&#9963 April Long </h1>
-
-        <h2>Today's Date</h2>
-        <span id='ct'></span>
-        <p>Educator, Developer, & Motivator</p>
-    </div>
+    <header class="hero-section text-center py-5">
+        <h1 class="display-1 fw-bold mb-4">&#9963 April Long</h1>
+        <div class="date-display mb-3">
+            <h2 class="h4 mb-2">Today's Date</h2>
+            <span id='ct' class="fs-5"></span>
+        </div>
+        <p class="lead fs-3">Educator, Developer, & Motivator</p>
+    </header>
     <br>
     <br>
-    <div class="flexbox-container">
+    <main class="container py-5">
 
-        <div class="flexbox-item" two>
-            <div class="fish"> </div>
-            <div class="fish2"> </div>
-            <h2><strong>About Me</strong></h2>
+        <section class="row g-4 align-items-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="section-title mb-4"><i class="bi bi-person-circle me-2"></i>About Me</h2>
 
-            <p class="about-me"> My name is <strong>April Long</strong>. I have been an active teacher and teacher
-                trainer for over 10 <i>years.</i> <I></I> received a
-                Bachelor's degree from <i>University of Colorado</i> where I
-                studied Education with a focus on African American History, I later
-                attended <i>Udacity by Google</i> for a Nano-degree in Frontend Development.
-                I then attended <i>The University of Denver</i> to study fullstack development.
-                <br> After focusing on web development, I knew that my place was still in the
-                classroom. I have a passion for teaching which I've exuded for a decade. I can bring
-                diversity, creativity, and consistency to any place I am employed!
-                <span style="color: aqua">
-                    Technology is the future, so let's go in on it together!</span>
-            </p>
-        </div>
-        <div class="flexbox-item img-fluid" one>
-            <img src="images/me2.jpg" alt="April Long">
+                <p class="about-me"> My name is <strong>April Long</strong>. I have been an active teacher and teacher
+                    trainer for over 10 <i>years.</i> <I></I> received a
+                    Bachelor's degree from <i>University of Colorado</i> where I
+                    studied Education with a focus on African American History, I later
+                    attended <i>Udacity by Google</i> for a Nano-degree in Frontend Development.
+                    I then attended <i>The University of Denver</i> to study fullstack development.
+                    <br> After focusing on web development, I knew that my place was still in the
+                    classroom. I have a passion for teaching which I've exuded for a decade. I can bring
+                    diversity, creativity, and consistency to any place I am employed!
+                    <span style="color: aqua">
+                        Technology is the future, so let's go in on it together!</span>
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <div class="profile-image-wrapper">
+                    <img src="images/me2.jpg" alt="April Long" class="img-fluid rounded-circle shadow">
+                </div>
+            </div>
 
-        </div>
-
-        <div class="flexbox-item" three>
-            <card>
+            <div class="flexbox-item" three>
                 <div class="card card border-dark mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Want to Learn more about April? </h5>
@@ -89,66 +81,59 @@
     <br>
     <br>
 
-    <div class="flexbox-container second">
-
-        <div class="elfsight-app-4952fbeb-eaed-4c3b-9087-d839074ce32f" style="background-color: antiquewhite;"
-            data-elfsight-app-lazy></div>
-        <!-- <br>
-        <div class="flexbox-item four">
-            <form class="border border solid mx-2">
-                <div class="row mb-3">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3">
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                    <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword3">
-                    </div>
-                </div>
-                <fieldset class="row mb-3">
-                    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                                First radio
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                                Second radio
-                            </label>
-                        </div>
-                        <div class="form-check disabled">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
-                                value="option3" disabled>
-                            <label class="form-check-label" for="gridRadios3">
-                                Third disabled radio
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-                <div class="row mb-3">
-                    <div class="col-sm-10 offset-sm-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label" for="gridCheck1">
-                                Example checkbox
-                            </label>
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <h2 class="section-title text-center"><i class="bi bi-envelope-paper me-2"></i>Get in Touch</h2>
+                            <p class="text-center text-muted mb-4">Have a question or want to work together?</p>
+                            
+                            <form id="contactForm" class="needs-validation" novalidate>
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="subject" required>
+                                                <option value="" selected disabled>Choose a subject</option>
+                                                <option value="collaboration">Project Collaboration</option>
+                                                <option value="teaching">Teaching Opportunity</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                            <label for="message">Your Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg px-5 py-3">
+                                            <i class="bi bi-send me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-            </form> -->
-
-        <a href="mailto:april11dance@yahoo.com" class="link">Email Me Here &#9754</a>
-    </div>
+            </div>
+        </div>
+    </section>
 
     </div>
     <hr>
@@ -164,9 +149,10 @@
     <br>
     <br>
     <br>
-    <h3 style="text-align: center;">My Work!</h3>
-    <div class="container">
-        <div class="row">
+    <section class="portfolio-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5"><i class="bi bi-code-slash me-2"></i>My Work</h2>
+            <div class="row g-4">
             <div class="col-md-6">
                 <!--Sample-->
                 <div class="card text-center card border-dark mb-3 rounded">
@@ -220,21 +206,27 @@
         <div class="row">
             <div class="col-md-6">
                 <!--Sample-->
-                <div class="card text-center card border-dark mb-3 rounded">
-                    <div class="card-header">
-                        <h2 div class="head  text-danger">Friend-finder</h2>
+                <div class="card h-100 project-card">
+                    <div class="card-header bg-gradient">
+                        <h3 class="card-header-title mb-0">Friend-finder</h3>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">BackEnd Focus</h5>
-                        <img
-                            src="https://www.consumer.ftc.gov/sites/www.consumer.ftc.gov/files/games/off-site/game-0003_friend-finder_680x360.png">
-                        <p>Find your Next Friend! </p>
-
-                        <a href="https://friend-finder-no-new-friends.herokuapp.com/" target="_blank"
-                            class="btn btn-primary" id="button">Live
-                            View</a>
-                        <a href="https://github.com/ApVen77/friend-finder" target="_blank" class="btn btn-primary"
-                            id="button">Github</a>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Backend Focus</h5>
+                        <div class="project-image mb-3">
+                            <img src="https://www.consumer.ftc.gov/sites/www.consumer.ftc.gov/files/games/off-site/game-0003_friend-finder_680x360.png"
+                                alt="Friend Finder Project" class="img-fluid rounded">
+                        </div>
+                        <p class="card-text flex-grow-1">Find your Next Friend!</p>
+                        <div class="project-links mt-3">
+                            <a href="https://friend-finder-no-new-friends.herokuapp.com/" target="_blank"
+                                class="btn btn-primary me-2">
+                                <i class="bi bi-globe me-1"></i>Live Demo
+                            </a>
+                            <a href="https://github.com/ApVen77/friend-finder" target="_blank"
+                                class="btn btn-outline-dark">
+                                <i class="bi bi-github me-1"></i>Source Code
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!--Sample-->
@@ -321,42 +313,60 @@
     </div>
     <br>
     <hr>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <aside class="reviews-page">
-                    <h2>Client Reviews</h2>
-                    <p id="ss-review" style="margin-top: 25px;"></p>
-                    <br>
-
-                </aside>
-            </div>
-
-            <div class="col">
-                <aside class="reviews-page">
-                    <h2>Students Served</h2>
-                    <br>
-                    <div class="elfsight-app-8dc6ad8a-a9ed-4478-b502-52b96e3357aa" data-elfsight-app-lazy></div>
-
-                </aside>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12" m-3>
-                <footer>April Long &copy 2019
-                    <a href="mailto:april11dance@yahoo.com">Email Me Here &#9754</a>
-                    <p>Rate Me &#9734 &#9734 &#9734 &#9734 &#9734 </p> <input type="submit">
-
-                    <br>
-                    <br>
-                </footer>
+    <section class="reviews-section py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h2 class="section-title"><i class="bi bi-chat-quote me-2"></i>Client Reviews</h2>
+                            <div id="ss-review" class="mt-4"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h2 class="section-title"><i class="bi bi-people me-2"></i>Students Served</h2>
+                            <div class="elfsight-app-8dc6ad8a-a9ed-4478-b502-52b96e3357aa mt-4" data-elfsight-app-lazy></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <footer class="footer py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <p class="mb-0">&copy; 2025 April Long</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="social-links">
+                        <a href="mailto:april11dance@yahoo.com" class="btn btn-outline-primary rounded-circle">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-primary rounded-circle ms-2">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-primary rounded-circle ms-2">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-end">
+                    <div class="rating">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <br>
 
     <script src="app.js"></script>
